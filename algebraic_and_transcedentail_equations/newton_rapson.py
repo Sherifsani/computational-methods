@@ -1,3 +1,5 @@
+import sympy as sp
+
 def newton_rapson(a, b, c, x = 1):
     fx = (a * x * x) - (b * x) + c
     print(f"f(x) is {fx}")
@@ -14,4 +16,4 @@ def newton_rapson(a, b, c, x = 1):
         print(f"the next value of x is {x2}")
         return newton_rapson(a, b, c, x2)
 
-print(newton_rapson(1, 7, 10, 1))
+print(newton_rapson(1, -1, 6, 1))

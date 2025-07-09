@@ -27,9 +27,9 @@ def bisection(equation, a, b, tol=1e-6, max_iter=100, iter_count=0):
         return bisection(equation, x_r, b, tol, max_iter, iter_count + 1)
 
 def main():
-    equation = x**3 - 2*x - 5
-    a = 2
-    b = 3
+    equation = x**3 - x - 1
+    a = 1
+    b = 2
     bisection(equation, a, b)
 
 main()
